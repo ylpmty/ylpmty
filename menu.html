@@ -30,6 +30,7 @@
             color: #333333;
             height: 40px;
             position: relative;
+            transition: all 0.3s ease-out;
         }
 
         .menu li::after {
@@ -43,11 +44,12 @@
             bottom: 0;
             transition: all 0.3s ease-out;
         }
-
+        .menu li.active {
+            color: red;
+        }
         .menu li.active::after {
             width: 100%;
         }
-
         .btn {
             display: block;
             width: 100px;
